@@ -7,8 +7,8 @@ echo "Done installing"
 echo
 
 PS3='Choose an option: '
-foods=("Max brightness" "Lowest brightness without screen off" "Lowest brightness turn off screen" "Middle brightness" "Second highest without eyes hurting" "Exit the script")
-select fav in "${foods[@]}"; do
+bright=("Max brightness" "Lowest brightness without screen off" "Lowest brightness turn off screen" "Middle brightness" "Second highest without eyes hurting" "Exit the script")
+select fav in "${bright[@]}"; do
     case $fav in
         "Max brightness")
         brightness 1
